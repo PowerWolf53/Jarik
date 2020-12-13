@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px
+}
+
+@font-face {
+  font-family: "Roboto-black";
+  src: url("../resourse/fonts/roboto/Roboto-Black.ttf")
+}
+
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../resourse/fonts/roboto/Roboto-Regular.ttf")
+}
+
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../resourse/fonts/roboto/Roboto-Bold.ttf")
+}
+
+@font-face {
+  font-family: "Roboto-italic";
+  src: url("../resourse/fonts/roboto/Roboto-Italic.ttf")
+}
+
+@font-face {
+  font-family: "Roboto-BlackItalic";
+  src: url("../resourse/fonts/roboto/Roboto-BlackItalic.ttf")
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../resourse/fonts/Raleway/Raleway-ExtraBold.otf")
+}
+
+@font-face {
+  font-family: "Raleway-Heavy";
+  src: url("../resourse/fonts/Raleway/Raleway-Heavy.otf")
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background: #2b2b9e;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px
+}
+
+main {
+  display: flex;
+  min-height: 400px;
+  color: white
+}
+
+main article {
+  width: 80%;
+  background: url(https://www.setwalls.ru/download.php?file=201305/800x600/setwalls.ru-54495.jpg)
+}
+
+main article table {
+  width: 100%;
+  color: #000
+}
+
+main nav {
+  width: 20%;
+  background: #fff
+}
+
+main nav a {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-family: "Raleway-ExtraBold";
+  font-size: 23px;
+  color: #2b2b9e;
+  padding-bottom: 15px;
+  text-decoration: none
+}
+
+main nav a:hover {
+  text-shadow: 1px 1px 1px #0c4a11;
+  text-decoration: underline
+}
+
+main aside {
+  width: 20%;
+  background: url(https://s2.best-wallpaper.net/wallpaper/iphone/1904/Turtle-and-fish-sea-underwater_iphone_320x480.jpg)
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background: rgba(34, 34, 53, 0.5)
+}
+
+footer a {
+  margin: 10px;
+  font-family: "Raleway-ExtraBold";
+  font-size: 23px;
+  color: #fff
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around
+}

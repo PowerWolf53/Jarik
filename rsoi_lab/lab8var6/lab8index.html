@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Лаба 8 РСОИ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/lab8css.css" />
+    <script src="./js/lab8js.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <h1></h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="main-page">
+        <div id="" class="main-block">
+          <form
+            action="http://127.0.0.1:8000/"
+            method="POST"
+            class="form"
+            id="form1"
+          >
+            <table id="table1">
+              <tr>
+                <td>
+                  <label for="text">Text</label>
+                </td>
+                <td id="field1">
+                  <input type="text" name="text" id="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="text">Datalist</label>
+                </td>
+                <td id="field2">
+                  <input type="text" name="datalist" id="" list="datalist" />
+                  <datalist id="datalist">
+                    <option value="Internet Explorer"> </option>
+                    <option value="Firefox"> </option>
+                    <option value="Chrome"> </option>
+                    <option value="Opera"> </option>
+                  </datalist>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email">Email</label>
+                </td>
+                <td id="field3">
+                  <input type="email" name="email" id="email" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="">Checkboxes</label>
+                </td>
+                <td id="field4">
+                  <input type="radio" name="sex" value="Man" />Man
+                  <input type="radio" name="sex" value="Woman" />Woman
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- <select name="saveOption" id="newProperty">
+                        <option value="allRows">Все строки текста</option>
+                        <option value="evenRows">Только чётные строки</option>
+                        <option value="oddRows">Только нечётные строки</option>
+                      </select> -->
+                  <button type="submit" onclick="">
+                    Сохранить текст
+                  </button>
+                </td>
+                <td>
+                  <button type="button" onclick="showText()">
+                    Вывести тексты
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea name="" id="initial" rows="14"></textarea>
+                </td>
+                <td>
+                  <textarea name="" id="modified" rows="14"></textarea>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   // margin: 20px;
+    background: url("../resource/breek.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 19vh;
+    width: 90%;
+    background-color: rgba(105, 105, 105, .8);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.main {
+    width: 90%;
+    display: flex;
+    min-height: calc(100vh - 35vh);
+}
+
+.main>nav {
+    order: -1;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+  padding: 1em;
+}
+
+aside,
+nav {
+    width: 10%;
+    background-color: LightGrey;
+    opacity: 0.5;
+}
+
+.article {
+      width: 80%;
+  background: linear-gradient(135deg, rgba(255,255,255,.9) 0%, rgba(246,246,246,.9) 47%, rgba(237,237,237,.9) 100%);
+display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+}
+
+.head_text {
+    font-size: 131%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 50%;
+}
+
+.input-group {
+    display: flex;
+    position: relative;
+   // top: 21%;
+}
+
+.input-group>label {
+    margin-right: 1em;
+    padding: .5em 0;
+    position: relative;
+    right: -2%;
+}
+
+.form input,
+.form select {
+    flex: 6;
+    padding: .5em;
+    margin-bottom: 1em;
+    position: relative;
+    right: -1%;
+    top: 26%;
+}
+
+.form .contactChoice {
+    position: relative;
+    padding: 0px;
+    top: 7px;
+}
+
+.form fieldset {
+    border: 0;
+    position: relative;
+    left: 16%;
+    top: 0px;
+}
+
+.checkbox>label {
+    margin-right: 1em;
+    position: relative;
+    right: 3%;
+}
+
+.check-group {
+    display: flex;
+    position: relative;
+   // top: 20%;
+}
+
+.check-group>label {
+    margin-right: 1em;
+    position: relative;
+    right: 3%;
+    padding: -4px;
+}
+
+.form .Poz {
+    display: block;
+    position: relative;
+    padding: -1px;
+    top: 16px;
+    right: 26px;
+    margin: 0px;
+}
+
+.form .textArea {
+    max-width: 205px;
+    max-height: 80px;
+}
+
+.textarea>label {
+    display: block;
+    margin-right: 1em;
+    position: relative;
+    right: 3%;
+}
+
+.submit {
+  top: -40px;
+    width: 12%;
+    left: 48%;
+    position: relative;
+}
+
+.reset {
+    position: relative;
+
+    left: 50px;
+    width: 60px;
+    user-select: none;
+}
+
+.reset:hover {
+  animation-name: an;
+    animation-duration: 1s;
+}
+
+.copyright {
+    position: relative;
+    background-color: grey;
+    width: 96%;
+    height: 89%;
+    top: -15px;
+    left: 2%;
+}
+
+.copyright p {
+    position: relative;
+    text-align: center;
+    top: 9px;
+    font-size: 97%;
+}
+
+.img {
+
+}
+
+input:invalid:not(:focus) {
+    outline: 1px solid #f00;
+}
+
+footer {
+    background: grey;
+    width: 90%;
+    height: 10vh;
+    opacity: 0.5;
+    border-radius: 0 0 20px 20px;
+}
+
+@keyframes an {
+    0% {transform: rotate(0deg);}
+    30% {transform: rotate(20deg);}
+    70% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#optgroup {
+  width: 400px;
+}

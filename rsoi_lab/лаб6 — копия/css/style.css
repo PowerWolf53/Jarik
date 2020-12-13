@@ -1,0 +1,48 @@
+img {
+    width: 200px;
+}
+
+button {
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    background: rgb(0, 204, 255);
+}
+
+.classNew {
+    background: #ccc;
+    color: red;
+}
+
+.class1 {
+    background: rgb(189, 123, 123);
+    font-stretch: expanded;
+    font-style: italic;
+}
+
+.class2 {
+    background: rgb(148, 241, 153);
+    font-weight: 400;
+    text-align: right;
+}
+
+.class3 {
+    background: rgb(165, 143, 245);
+    font-weight: 400;
+}
+
+.class4 {
+    background: rgb(219, 148, 241);
+    font-weight: 700;
+    text-decoration: aqua;
+}
+
+.class5 {
+    background: rgb(217, 248, 130);
+    font-style: italic;
+}
+
+.class6 {
+    background: rgb(207, 133, 179);
+    font-weight: 900;
+}

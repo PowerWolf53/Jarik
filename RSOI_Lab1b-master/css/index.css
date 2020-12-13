@@ -1,0 +1,196 @@
+.first_img{
+    width: 350px;
+    height: 500px;
+    animation-delay: 0s;
+}
+
+.seconds_img{
+    position: relative;
+    left: -175px;
+    top: 80px;
+    width: 500px;
+    height: 350px;
+    animation-delay: 2s;
+
+}
+
+.third_img{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    left: 525px;
+    top: -50px;
+    animation-delay: 3s;
+
+}
+
+.forth_img{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+img, h1, h3{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1{
+    position: relative;
+    left: 550px;
+    top: -530px;
+    color: darkorange;
+    font-size: 220%;
+    animation-delay: 3s;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 20px;
+    position: relative;
+    top: -520px;
+    word-break: break-all;
+    width: 350px;
+    left: 600px;
+    color: darkorange;
+    animation-delay: 5s;
+}
+
+.first_row{
+    background-image: url("../resource/med_1487009767_image.jpg");
+    background-color: rgba(255, 255, 255, 0.486);
+    background-blend-mode: overlay;
+}
+
+.first_row::after{
+    opacity: 0.5;
+}
+.second_row{
+    width: 600px;
+    background-repeat: revert;
+    background-image: url("../resource/wzMsdXVtGZk.jpg");
+    background-color: rgba(255, 255, 255, 0.486);
+    background-blend-mode: overlay;}
+
+.seconds_p::after{
+    opacity: 0.5;
+}
+
+.char{
+    color: darkorange;
+}
+
+.test{
+    position: relative;
+    top: -120px;
+}
+.text{
+    background-image: url('../resource/zhmyh-valakas.jpg');
+
+}
+p{
+    text-shadow: 1px 3px 7px blue, 0 0 1em yellow;
+    position: relative;
+    color: #222;
+    font-family: Programme,Arial,sans-serif;
+    word-break: keep-all;
+    line-height: 1.7em;
+    font-weight: bold;
+    font-size: 19px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    width: 350px;
+    height: 200px;
+    background-origin: initial;
+}
+
+.first_p{
+    opacity: 1;
+    background: linear-gradient(yellow, blue);
+    top: -250px;
+    height: 220px;
+    font-family: "Droid Sans", serif;
+    font-weight: bold;
+}
+
+.seconds_p{
+    top: -240px;
+}
+
+.seconds_p:hover{
+     -webkit-transform: rotateZ(-30deg);
+     -ms-transform: rotateZ(-30deg);
+     transform: rotateZ(-30deg);
+     color: yellow
+ }
+
+.third_p{
+    height: 400px;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 1s ease-in-out infinite;
+    background-size: 400% 100%;
+    top: -180px;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes spin {
+    0%{
+        border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+        opacity: 1;
+          -webkit-transform: rotate(0deg); transform:rotate(0deg);
+        right: 0;
+    }
+    25%{
+        opacity: 0.9;
+          -webkit-transform: rotate(120deg); transform:rotate(120deg);
+        left: 25%;
+    }
+    50%{
+        border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60;
+        opacity: 0.8;
+          -webkit-transform: rotate(360deg); transform:rotate(360deg);
+        left: 56%;
+    }
+    75%{
+        opacity: 0.9;
+          -webkit-transform: rotate(120deg); transform:rotate(120deg);
+        right: 25%;
+    }
+    100%
+    {
+        opacity: 1;
+        -webkit-transform: rotate(0deg); transform:rotate(0deg);
+        right: 0;
+    }
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>lab 4</title>
+    <link rel="stylesheet" type="text/css" href="../css/css.css" />
+    <base href="index2.html" target="_blank">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../resource/logo.png" align="right" class="img">
+	</div>
+    </header>
+    <main class="main">
+        <nav>
+        	<a href="index2.html" target="_self">Таблица</a>
+        </nav>
+        <article class="article">
+            <label class="head_text">Опрос нашего маркета!</label>
+            <form class="form" method="POST" action="index2.html" onsubmit="return checkForm();">
+                <div class="row">
+                    <div class="column">
+                        <div class="input-group">
+                            <label class="lable" for="uname">Ваше имя:</label>
+                            <input type="text" class="input" name="username" id="username" required minlength="4" maxlength="10" placeholder="4 to 10 characters long" />
+                        </div>
+                        <div class="input-group" id="radioButton">
+                            <label for="claws">Сколько обычно тратите за поход в магазин?</label>
+                            <input type="radio" class="contactChoice" name="radioButton" id="ten" for="radioButton">
+                            <label for="ten"><100р</label>
+                            <input type="radio" class="contactChoice" name="radioButton" id="twenty" for="radioButton">
+                            <label for="twenty">100р-300р</label>
+                            <input type="radio" class="contactChoice" name="radioButton" id="forty" for="radioButton">
+                            <label for="forty">300р-600р</label>
+                            <input type="radio" class="contactChoice" name="radioButton" id="sixty" for="radioButton">
+                            <label for="sixty">>600р</label>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Введите время прохождения опроса:</label>
+                            <input id="phone" type="datetime-local" name="bdaytime">
+                        </div>
+                        <div class="input-group">
+                            <label class="TV">Выберите любимую сеть супермаркетов</label>
+                            <select name="cars" id="display">
+                                <option value="Соседи">Соседи</option>
+                                <option value="Green">Green</option>
+                                <option value="Евроопт">Евроопт</option>
+                                <option value="Белмаркет">Белмаркет</option>
+                                <option value="Корона">Корона</option>
+                                <option value="Preston">Preston</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="secondary">Введите свою почту, для получения результатов опроса:</label>
+                            <input type="email" id="email" placeholder="email@mail.com">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="check-group">
+                            <fieldset class="checkbox">
+                                <label for="claws">Какие отделы чаще посещаете?</label>
+                                <input type="checkbox" class="Poz" name="poznov" id="poznov" value="Poz" checked />
+                                <label for="poznov">Молочный</label>
+                                <input type="checkbox" class="Poz" name="razv" id="razv" value="Poz" />
+                                <label for="razv">Хлебо-булочный</label>
+                                <input type="checkbox" class="Poz" name="info" id="info" value="Poz" />
+                                <label for="info">Мясной</label>
+                                <input type="checkbox" class="Poz" name="analys" id="analys" value="Poz" />
+                                <label for="analys">Рыбный</label>
+                                <input type="checkbox" class="Poz" name="info-raz" id="info-raz" value="Poz" />
+                                <label for="info-raz">Готовой продукции</label>
+                            </fieldset>
+                        </div>
+                        <div class="check-group">
+                            <fieldset class="textarea">
+                                <label>Ваши пожелания и предложения по улучшению сети Green:</label>
+                                <textarea class="textArea" id="textarea" rows="10" cols="45" name="text" placeholder="Введите текст..."></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button  onclick="reset()"> Очистить поля </button> -->
+                <input class="reset" type="image" src="../resource/btn-clear.png" onclick="reset()">
+                <button class="submit" type="submit">Отправить </button>
+
+            </form>
+        </article>
+        <aside>Здесь может быть ваша реклама</aside>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>2018 @ - Опросик Green</p>
+        </div>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

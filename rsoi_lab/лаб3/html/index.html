@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Анна</title>
+</head>
+
+<body>
+  <header>
+    <img src="../resourse/images/logo1.png" alt="logo">
+
+  </header>
+  <main>
+    <article >
+
+      <form autocomplete="on" id="form">
+        <fieldset>
+          <legend>Контактная информация</legend>
+          <p><label for="name">Имя</label>
+            <input type="text" required name="name"></p>
+          <p><label for="email">E-mail</label>
+            <input type="email" required name="email"></p>
+          <p><label for="tel">Телефон</label>
+              <input type="tel" required name="tel"></p>
+        </fieldset>
+        <fieldset>
+          <legend>Информация о туре</legend>
+          <p>Количество звезд в отеле</p>
+          <div>
+            <p>
+              <input type="checkbox" name="nalichie_nom" value="2звезды">
+              <label for="cond">2 звезды</label></p>
+            <p>
+              <input type="checkbox" name="nalichie_nom" value="3звезды">
+              <label for="tv">3 звезды</label></p>
+            <p>
+              <input type="checkbox" name="nalichie_nom" value="4звезды">
+              <label for="fridge">4 звезды</label></p>
+              <p>
+                <input type="checkbox" name="nalichie_nom" value="5звезд">
+                <label for="fridge">5 звезд</label></p>
+          </div>
+            <p>
+              <input type="color" name="color_room" id="color">
+              <label for="color">Цвет постельного белья</label></p>
+
+
+              <p>Тип питания</p>
+
+              <div>
+                <input type="radio" id="breakfast" name="eat" value="Только завтрак"
+                       checked>
+                <label for="breakfast">Только завтрак</label>
+              </div>
+
+              <div>
+                <input type="radio" id="br+din" name="eat" value="Завтрак + обед">
+                <label for="br+din">Завтрак + обед</label>
+              </div>
+
+              <div>
+                  <input type="radio" id="all" name="eat" value="Все включено">
+                  <label for="all">Все включено</label>
+              </div>
+              <div>
+                <p>Минимальная стоимость (руб.)</p>
+                <input type="number" required name="min_price" min="100" max="10000000" step="50">
+              </div>
+              <div>
+                <p>Максимальная стоимость (руб.)</p>
+                <input type="number" required name="max_price" min="500" max="10000000" step="50">
+              </div>
+
+              <input type="hidden" name="country" value="Rus">
+        </fieldset>
+      <p><input class="butt" type="submit" id="send" value="Отправить"></p>
+      <p><input class="butt" type="reset" value="Очистить" /></p>
+      </form>
+    </article>
+    <nav>
+      <a id="a_main" href="#">Главная</a>
+      <a id="a_res" href="#">Результаты</a>
+    </nav>
+    <aside>
+    </aside>
+  </main>
+  <footer>
+    <a class="foot-contact">TRAVEL</a>
+        <ul>
+          
+          <li><a>"375446579976"</a></li>
+          <li><a>"SHANDROHA"</a></li>
+        </ul>
+  </footer>
+  <script src="../js/script.js">
+  </script>
+</body>
+
+</html>

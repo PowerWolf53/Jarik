@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Лабораторная работа №8</title>
+	<link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+</head>
+
+<body>
+	<main>
+		<div class="numFormat">
+			<label>Выберете числовой формат</label>
+
+			<input type="checkbox" name="option1" value="0" checked>#0</input>
+			<input type="checkbox" name="option2" value="1">#0.0</input>
+			<input type="checkbox" name="option3" value="2">#0.00</input>
+			<input type="checkbox" name="option4" value="3">#0.000</input>
+			<input type="checkbox" name="option5" value="4">#0.0000</input>
+			</input>
+		</div>
+		<div class="Buttons">
+			<button id="createBtn">Новая таблица</button>
+			<button id="ascendingBtn">Сортировка по возрастанию</button>
+			<button id="descendingBtn">Сортировка по убыванию</button>
+		</div>
+		<div class="randomTable">
+			<label class="nameTable" id="labelRnd"></label>
+			<table class="number" id="rndTable">
+			</table>
+		</div>
+		<div class="viewTable">
+			<label class="nameTable" id="labelView"></label>
+			<table class="number" id="sortTable">
+			</table>
+		</div>
+	</main>
+	<script type="text/javascript" src="/public/js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="/public/js/script.js"></script>
+</body>
+
+</html>
